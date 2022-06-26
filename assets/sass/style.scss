@@ -1,0 +1,115 @@
+@import "reset.scss";
+@import "header.scss";
+@import "var.scss";
+@import "mainScreen.scss";
+@import "reputation.scss";
+@import "products.scss";
+@import "awards.scss";
+@import "inovation.scss";
+@import "join.scss";
+@import "footer.scss";
+@import "fonts.scss";
+@import "build.scss";
+@import "culture.scss";
+@import "whoWe.scss";
+@import "offer.scss";
+@import "life.scss";
+@import "rate.scss";
+@import "contact.scss";
+
+.swiper {
+  height: 120px;
+  @media screen and (max-width: $breakpointS) {
+    height: 300px;
+  }
+}
+
+body {
+  font-family: $font;
+  transition: all 0.3s;
+  background-attachment: fixed;
+
+  .button {
+    background: $buttonColor;
+    border-radius: 6px;
+    position: relative;
+    border: 2px solid transparent;
+
+    a {
+      text-decoration: none;
+      color: white;
+    }
+
+    &:after {
+      content: "";
+      width: 100%;
+      border-radius: 4px;
+      height: 3px;
+      position: absolute;
+      background-color: transparent;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      transform: scaleY(1);
+      transition: all 0.3s;
+    }
+    &:hover {
+      border: 2px solid $grey;
+      a {
+        color: black !important;
+        position: relative;
+        z-index: 2;
+        transition: all 0.3s;
+      }
+      &:after {
+        background-color: white;
+        height: 100%;
+        transform: scaleY(1);
+      }
+    }
+  }
+
+  .button2 {
+    border: 2px solid $buttonColor;
+    position: relative;
+    border-radius: 6px;
+
+    a {
+      text-decoration: none;
+      color: $buttonColor;
+    }
+
+    &:after {
+      content: "";
+      width: 101%;
+      border-radius: 4px;
+      height: 1px;
+      position: absolute;
+      background-color: transparent;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      transform: scaleY(1);
+      transition: all 0.3s;
+    }
+    &:hover {
+      border: 2px solid $buttonColor;
+      a {
+        color: white !important;
+        position: relative;
+        z-index: 2;
+        transition: all 0.3s;
+      }
+      &:after {
+        background-color: $buttonColor;
+        height: 100%;
+        transform: scaleY(1);
+      }
+    }
+  }
+
+  .wrapper {
+    max-width: $wrapperwidth;
+    margin: 0 auto;
+  }
+}

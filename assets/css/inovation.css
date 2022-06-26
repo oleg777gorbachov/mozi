@@ -1,0 +1,97 @@
+.inovation {
+  background: white;
+}
+
+.inovation .inovationContainer {
+  padding-top: 120px;
+}
+
+@media screen and (max-width: 1320px) {
+  .inovation .inovationContainer {
+    margin: 32px 50px 0px 50px;
+  }
+}
+
+@media screen and (max-width: 868px) {
+  .inovation .inovationContainer {
+    margin: 0px 10px;
+    padding-top: 32px;
+  }
+}
+
+.inovation .inovationContainer .inovationText {
+  text-align: center;
+  margin-bottom: 113px;
+}
+
+.inovation .inovationContainer .inovationText .inovationTitle {
+  font-size: 48px;
+  color: #1a2578;
+  font-weight: 700;
+  padding-bottom: 16px;
+}
+
+.inovation .inovationContainer .inovationText .inovationSubText {
+  color: #646a89;
+  font-size: 18px;
+}
+
+.inovation .inovationContainer .inovationGalery {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding-bottom: 120px;
+}
+
+.inovation .inovationContainer .inovationGalery .inovationImages {
+  padding: 10px;
+  background-color: white;
+  -webkit-box-shadow: 0px 0px 8px rgba(22, 23, 72, 0.07), 0px 25px 35px rgba(22, 23, 72, 0.05);
+          box-shadow: 0px 0px 8px rgba(22, 23, 72, 0.07), 0px 25px 35px rgba(22, 23, 72, 0.05);
+  border-radius: 8px;
+  margin: 10px 15px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+@media screen and (max-width: 420px) {
+  .inovation .inovationContainer .inovationGalery .inovationImages {
+    height: 200px;
+  }
+}
+
+.inovation .inovationContainer .inovationGalery .inovationImages img {
+  height: 120px;
+  width: 100%;
+}
+
+.inovation .inovationContainer .arrows {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.inovation .inovationContainer .arrows .arrow {
+  font-weight: 800px;
+  padding: 5px;
+  font-size: 24px;
+  margin: 10px 10px;
+  background-color: rgba(227, 231, 246, 0.6);
+  border-radius: 32px;
+  cursor: pointer;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.inovation .inovationContainer .arrows .arrow:hover {
+  background-color: #e3e7f6;
+}

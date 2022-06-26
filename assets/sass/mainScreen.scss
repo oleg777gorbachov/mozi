@@ -1,0 +1,136 @@
+@import "var.scss";
+
+.mainScreen {
+  background: linear-gradient(
+    252.91deg,
+    #e3e7f6 3.68%,
+    rgba(227, 231, 246, 0) 97.82%
+  );
+  .mainScreenWrapper {
+    display: flex;
+    position: relative;
+    @media screen and (max-width: $breakpointXL) {
+      flex-wrap: wrap;
+    }
+  }
+
+  @media screen and (max-width: $breakpointXXL) {
+    padding: 32px 50px 0px 50px;
+  }
+
+  @media screen and (max-width: $breakpointL) {
+    padding: 32px 10px 0px 10px;
+  }
+
+  .contentImage {
+    position: relative;
+    width: 100%;
+    margin-top: 129px;
+    align-items: end;
+    display: flex;
+
+    @media screen and (max-width: $breakpointXL) {
+      margin-top: 0px;
+    }
+    @media screen and (max-width: $breakpointSL) {
+      display: none;
+    }
+    img {
+      width: 100%;
+      // position: absolute;
+      // top: 80px;
+      // right: -120px;
+      // z-index: -1;
+      // @media screen and (max-width: 1080px) {
+      //   right: -200px;
+      // }
+      // @media screen and (max-width: $breakpointXL) {
+      //   top: 150px;
+      //   right: -350px;
+      // }
+      // @media screen and (max-width: $breakpointL) {
+      //   display: none;
+      // }
+
+      // img {
+      //   @media screen and (max-width: $breakpointXL) {
+      //     width: 80%;
+      //     height: 80%;
+      //     right: -100px;
+      //   }
+      // }
+    }
+  }
+
+  .content {
+    flex-direction: column;
+    display: flex;
+    margin-top: 129px;
+
+    .subText {
+      color: $grey;
+      font-size: $subText;
+      line-height: 33px;
+      max-width: 85%;
+      @media screen and (max-width: $breakpointXL) {
+        max-width: 100%;
+        text-align: center;
+      }
+      em {
+        font-size: $titleText;
+        color: $buttonColor;
+      }
+    }
+    .title {
+      color: $darkBlue;
+      font-weight: 800;
+      font-size: $titleText;
+      line-height: 62px;
+      max-width: 85%;
+      margin-bottom: 32px;
+      @media screen and (max-width: $breakpointXL) {
+        max-width: 100%;
+        text-align: center;
+      }
+      @media screen and (max-width: $breakpointSL) {
+        line-height: 44px;
+      }
+    }
+
+    .buttons {
+      display: flex;
+      margin-top: 54px;
+      margin-bottom: 50px;
+      @media screen and (max-width: $breakpointXL) {
+        display: flex;
+        justify-content: center;
+      }
+      @media screen and (max-width: $breakpointSL) {
+        flex-direction: column;
+      }
+
+      .button {
+        position: relative;
+        padding: 14px 32px;
+        @media screen and (max-width: $breakpointSL) {
+          text-align: center;
+        }
+
+        a {
+          text-decoration: none;
+          color: white;
+          font-size: $normalText;
+        }
+      }
+
+      .button2 {
+        padding: 14px 32px;
+        margin-left: 16px;
+        @media screen and (max-width: $breakpointSL) {
+          margin: 10px 0px;
+          text-align: center;
+        }
+      }
+    }
+  }
+}

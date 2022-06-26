@@ -1,0 +1,85 @@
+@import "var.scss";
+
+.reputation {
+  padding: 100px 0px;
+  background-color: white;
+  text-align: center;
+
+  .repBlocks {
+    padding-top: 150px;
+    display: flex;
+    justify-content: center;
+    gap: 32px;
+    @media screen and (max-width: $breakpointL) {
+      flex-wrap: wrap;
+    }
+
+    .repBlock {
+      background-color: white;
+      box-shadow: 0px 0px 8px rgba(22, 23, 72, 0.07),
+        0px 25px 35px rgba(22, 23, 72, 0.05);
+      border-radius: 8px;
+
+      .pad22 {
+        padding-bottom: 22px !important;
+      }
+
+      .pad26 {
+        padding-bottom: 26px !important;
+      }
+      .repBlockTitle {
+        font-weight: 700;
+        font-size: 56px;
+        color: $darkBlue;
+        padding-top: 50px;
+        padding-bottom: 20px;
+      }
+
+      .repBlockSubText {
+        font-weight: 400;
+        font-size: 22px;
+        line-height: 33px;
+        color: $grey;
+        padding-bottom: 16px;
+      }
+
+      .repBlockImg {
+        display: flex;
+        justify-content: end;
+        img {
+          width: 100%;
+        }
+      }
+    }
+  }
+
+  .repScreen {
+    @media screen and (max-width: $breakpointXXL) {
+      margin: 32px 50px 0px 50px;
+    }
+
+    @media screen and (max-width: $breakpointL) {
+      margin: 32px 10px 0px 10px;
+    }
+  }
+
+  .repImages {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    img {
+      padding: 5px 20px;
+    }
+  }
+
+  .repText {
+    font-size: $titleSubText;
+    font-weight: 600;
+    margin-bottom: 80px;
+    color: $darkBlue;
+
+    em {
+      color: $buttonColor;
+    }
+  }
+}

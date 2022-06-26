@@ -1,0 +1,51 @@
+.build {
+  background: linear-gradient(342.12deg, #e3e7f6 -6.53%, rgba(227, 231, 246, 0) 87.81%);
+  padding-top: 130px;
+}
+
+.build .buildInfo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+}
+
+.build .buildInfo .buildTitle {
+  color: #1a2578;
+  font-weight: 800;
+  font-size: 48px;
+  line-height: 62px;
+  padding-bottom: 32px;
+  max-width: 60%;
+  margin: 0 auto;
+}
+
+.build .buildInfo .buildSubTitle {
+  color: #646a89;
+  font-size: 22px;
+  line-height: 33px;
+  max-width: 70%;
+  margin: 0 auto;
+  padding-bottom: 40px;
+}
+
+.build .buildInfo .buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 16px;
+  margin: 0 auto;
+  padding-bottom: 150px;
+}
+
+.build .buildInfo .buttons .button,
+.build .buildInfo .buttons .button2 {
+  padding: 14px 24px;
+}

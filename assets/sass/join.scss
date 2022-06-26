@@ -1,0 +1,59 @@
+@import "var.scss";
+
+.join {
+  .wrapper {
+  }
+  .joinContainer {
+    display: flex;
+    padding-top: 120px;
+    @media screen and (max-width: $breakpointXXL) {
+      margin: 32px 50px 0px 50px;
+    }
+    @media screen and (max-width: $breakpointL) {
+      margin: 0px 10px;
+      padding-top: 32px;
+    }
+    @media screen and (max-width: 768px) {
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .joinImage {
+      padding-bottom: 100px;
+      img {
+        width: 100%;
+      }
+    }
+    .joinText {
+      margin-top: 108px;
+      @media screen and (max-width: 768px) {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding-bottom: 40px;
+      }
+      .joinTitle {
+        font-size: $titleText;
+        color: $darkBlue;
+        font-weight: 700;
+        padding-bottom: 16px;
+        max-width: 65%;
+      }
+
+      .joinSubText {
+        color: $grey;
+        font-size: $normalText;
+        padding-bottom: 16px;
+        max-width: 70%;
+        line-height: 27px;
+      }
+
+      .joinbutton {
+        padding: 14px 32px;
+        display: inline-block;
+        font-size: $normalText;
+      }
+    }
+  }
+}

@@ -1,0 +1,160 @@
+.life {
+  background: linear-gradient(270.76deg, #e3e7f6 -55.5%, rgba(227, 231, 246, 0) 145.36%);
+}
+
+@media screen and (max-width: 1320px) {
+  .life .lifeScreen {
+    margin: 32px 50px 0px 50px;
+  }
+}
+
+@media screen and (max-width: 868px) {
+  .life .lifeScreen {
+    margin: 32px 10px 0px 10px;
+  }
+}
+
+.life .lifeBlock {
+  gap: 36px;
+  padding-bottom: 40px;
+  padding-top: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media screen and (max-width: 968px) {
+  .life .lifeBlock {
+    gap: 16px;
+  }
+}
+
+@media screen and (max-width: 868px) {
+  .life .lifeBlock {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+.life .lifeBlock .lifeImg {
+  width: 100%;
+}
+
+.life .lifeBlock .lifeImg img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.life .lifeBlock .lifeText {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 900px;
+          flex: 1 1 900px;
+}
+
+@media screen and (max-width: 1320px) {
+  .life .lifeBlock .lifeText {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 700px;
+            flex: 1 1 700px;
+  }
+}
+
+@media screen and (max-width: 868px) {
+  .life .lifeBlock .lifeText {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: center;
+  }
+}
+
+.life .lifeBlock .lifeText .lifeTitle {
+  font-size: 48px;
+  line-height: 62px;
+  color: #1a2578;
+  padding-bottom: 20px;
+  max-width: 30%;
+}
+
+@media screen and (max-width: 868px) {
+  .life .lifeBlock .lifeText .lifeTitle {
+    max-width: 100%;
+  }
+}
+
+.life .lifeBlock .lifeText .lifeSubText {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 27px;
+  color: #646a89;
+  max-width: 55%;
+}
+
+@media screen and (max-width: 868px) {
+  .life .lifeBlock .lifeText .lifeSubText {
+    max-width: 100%;
+  }
+}
+
+.life .lifeGalery {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 36px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-bottom: 50px;
+}
+
+.life .lifeGalery .img3 {
+  margin-top: -63px;
+}
+
+@media screen and (max-width: 968px) {
+  .life .lifeGalery .img3 {
+    margin-top: auto;
+  }
+}
+
+.life .lifeGalery .img4 {
+  margin-top: auto;
+}
+
+.life .lifeGalery .lifeGaleryImg {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 47%;
+          flex: 1 1 47%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+}
+
+@media screen and (max-width: 968px) {
+  .life .lifeGalery .lifeGaleryImg {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 50%;
+            flex: 1 1 50%;
+  }
+}
+
+.life .lifeGalery .lifeGaleryImg img {
+  width: 100%;
+  border-radius: 8px;
+}

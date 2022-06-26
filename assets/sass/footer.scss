@@ -1,0 +1,158 @@
+@import "var.scss";
+
+.footerWrapper {
+  @media screen and (max-width: $breakpointXXL) {
+    margin-left: 30px !important;
+    margin-right: 30px !important;
+  }
+  @media screen and (max-width: $breakpointL) {
+    margin-left: 10px !important;
+    margin-right: 10px !important;
+  }
+}
+
+footer {
+  background-color: #0d123c;
+
+  .wrapper {
+    .contacts {
+      padding-top: 55px;
+      display: flex;
+      justify-content: space-between;
+      @media screen and (max-width: $breakpointL) {
+        padding-top: 20px;
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+      .mozidesc {
+        .logoFooter {
+          margin-bottom: 25px;
+          @media screen and (max-width: $breakpointL) {
+            text-align: center;
+          }
+        }
+        .moziInfo {
+          color: white;
+          max-width: 60%;
+          font-size: $normalText;
+          line-height: 27px;
+          padding-bottom: 100px;
+          @media screen and (max-width: $breakpointL) {
+            max-width: 100%;
+            padding-bottom: 30px;
+            text-align: center;
+          }
+        }
+      }
+      .footerInfo {
+        padding-bottom: 20px;
+        @media screen and (max-width: $breakpointL) {
+          text-align: center;
+        }
+
+        .footerMenu {
+          display: flex;
+
+          a {
+            color: white;
+            text-decoration: none;
+            transition: all 0.3s;
+            border-bottom: 2px solid transparent;
+
+            &:after {
+              content: "";
+              position: absolute;
+              bottom: -5px;
+              left: 0;
+              right: 0;
+              width: 100%;
+              height: 3px;
+              transform: scaleX(0);
+              background-color: $buttonColor;
+              transition: transform 0.3s;
+            }
+
+            &:hover {
+              &:after {
+                transform: scaleX(1);
+              }
+            }
+          }
+
+          .footerItem {
+            margin: 0px 55px;
+            color: white;
+            @media screen and (max-width: $breakpointSL) {
+              margin: 0px 25px;
+            }
+            @media screen and (max-width: $breakpointS) {
+              margin: 0px 10px;
+            }
+          }
+          .productsfooter {
+            .footerTitle {
+              margin-bottom: 30px;
+              position: relative;
+            }
+            .footerSubText {
+              margin-bottom: 21px;
+              position: relative;
+            }
+          }
+
+          .footerAbout {
+            .footerTitle {
+              margin-bottom: 30px;
+              position: relative;
+            }
+            .footerSubText {
+              margin-bottom: 21px;
+              position: relative;
+            }
+          }
+          .followfooter {
+            .footerTitle {
+              margin-bottom: 40px;
+              position: relative;
+            }
+            .footerImages {
+              display: flex;
+              align-items: center;
+              .footerFollowImg {
+                padding: 0px 5px;
+                transition: all 0.3s;
+                &:hover {
+                  border-radius: 6px;
+                  background: rgba($color: $greyLight, $alpha: 0.5);
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .footerUnder {
+    border-top: 1px solid $greyLight;
+    .footerWrapper {
+      display: flex;
+      justify-content: space-between;
+      .copyRight {
+        color: white;
+        padding: 30px 0px;
+      }
+      .terms {
+        padding: 30px 0px;
+        a {
+          color: white;
+          transition: all 0.3s;
+
+          &:hover {
+            background-color: rgba($color: $grey, $alpha: 0.2);
+          }
+        }
+      }
+    }
+  }
+}

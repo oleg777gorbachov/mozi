@@ -1,0 +1,74 @@
+@import "var.scss";
+
+.inovation {
+  background: white;
+
+  .wrapper {
+  }
+  .inovationContainer {
+    padding-top: 120px;
+    @media screen and (max-width: $breakpointXXL) {
+      margin: 32px 50px 0px 50px;
+    }
+    @media screen and (max-width: $breakpointL) {
+      margin: 0px 10px;
+      padding-top: 32px;
+    }
+
+    .inovationText {
+      text-align: center;
+      margin-bottom: 113px;
+      .inovationTitle {
+        font-size: $titleText;
+        color: $darkBlue;
+        font-weight: 700;
+        padding-bottom: 16px;
+      }
+      .inovationSubText {
+        color: $grey;
+        font-size: $normalText;
+      }
+    }
+
+    .inovationGalery {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      padding-bottom: 120px;
+      .inovationImages {
+        padding: 10px;
+        background-color: white;
+        box-shadow: 0px 0px 8px rgba(22, 23, 72, 0.07),
+          0px 25px 35px rgba(22, 23, 72, 0.05);
+        border-radius: 8px;
+        margin: 10px 15px;
+        align-items: center;
+        display: flex;
+        @media screen and (max-width: $breakpointS) {
+          height: 200px;
+        }
+        img {
+          height: 120px;
+          width: 100%;
+        }
+      }
+    }
+
+    .arrows {
+      display: flex;
+      .arrow {
+        font-weight: 800px;
+        padding: 5px;
+        font-size: 24px;
+        margin: 10px 10px;
+        background-color: rgba($color: $greyLight, $alpha: 0.6);
+        border-radius: 32px;
+        cursor: pointer;
+        transition: all 0.3s;
+        &:hover {
+          background-color: rgba($color: $greyLight, $alpha: 1);
+        }
+      }
+    }
+  }
+}

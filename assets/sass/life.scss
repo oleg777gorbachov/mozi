@@ -1,0 +1,107 @@
+@import "var.scss";
+
+.life {
+  background: linear-gradient(
+    270.76deg,
+    #e3e7f6 -55.5%,
+    rgba(227, 231, 246, 0) 145.36%
+  );
+
+  .lifeScreen {
+    @media screen and (max-width: $breakpointXXL) {
+      margin: 32px 50px 0px 50px;
+    }
+
+    @media screen and (max-width: $breakpointL) {
+      margin: 32px 10px 0px 10px;
+    }
+  }
+
+  .lifeBlock {
+    gap: 36px;
+    padding-bottom: 40px;
+    padding-top: 100px;
+    display: flex;
+    align-items: center;
+
+    @media screen and (max-width: $breakpointXL) {
+      gap: 16px;
+    }
+    @media screen and (max-width: $breakpointL) {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .lifeImg {
+      width: 100%;
+      img {
+        width: 100%;
+        border-radius: 8px;
+      }
+    }
+    .lifeText {
+      flex: 1 1 900px;
+      @media screen and (max-width: $breakpointXXL) {
+        flex: 1 1 700px;
+      }
+      @media screen and (max-width: $breakpointL) {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .lifeTitle {
+        font-size: $titleText;
+        line-height: 62px;
+        color: $darkBlue;
+        padding-bottom: 20px;
+        max-width: 30%;
+        @media screen and (max-width: $breakpointL) {
+          max-width: 100%;
+        }
+      }
+
+      .lifeSubText {
+        font-weight: 400;
+        font-size: $normalText;
+        line-height: 27px;
+        color: $grey;
+        max-width: 55%;
+        @media screen and (max-width: $breakpointL) {
+          max-width: 100%;
+        }
+      }
+    }
+  }
+
+  .lifeGalery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 36px;
+    justify-content: center;
+    padding-bottom: 50px;
+
+    .img3 {
+      margin-top: -63px;
+      @media screen and (max-width: $breakpointXL) {
+        margin-top: auto;
+      }
+    }
+    .img4 {
+      margin-top: auto;
+    }
+    .lifeGaleryImg {
+      flex: 1 1 47%;
+      display: flex;
+      height: 100%;
+      @media screen and (max-width: $breakpointXL) {
+        flex: 1 1 50%;
+      }
+      img {
+        width: 100%;
+        border-radius: 8px;
+      }
+    }
+  }
+}

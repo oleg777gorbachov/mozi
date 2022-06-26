@@ -1,0 +1,214 @@
+@import "var.scss";
+
+.review {
+  background-color: white;
+  .reviewScreen {
+    @media screen and (max-width: $breakpointXXL) {
+      margin: 32px 50px 0px 50px;
+    }
+
+    @media screen and (max-width: $breakpointL) {
+      margin: 32px 10px 0px 10px;
+    }
+  }
+
+  .reviewBlock {
+    margin-top: 50px;
+    margin-bottom: 120px;
+    background: #f7f8ff;
+    box-shadow: 0px 0px 8px rgba(22, 23, 72, 0.07),
+      0px 25px 35px rgba(22, 23, 72, 0.05);
+    border-radius: 8px;
+    display: flex;
+    padding: 40px;
+    justify-content: space-around;
+    @media screen and (max-width: $breakpointL) {
+      padding: 20px 10px;
+    }
+
+    .reviewRate {
+      display: flex;
+      align-items: center;
+      flex: 1 1 400px;
+
+      .reviewImg {
+        @media screen and (max-width: $breakpointSL) {
+          display: none;
+        }
+        img {
+          width: 100%;
+        }
+      }
+
+      .reviewTitle {
+        color: $darkBlue;
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 48px;
+        max-width: 60%;
+        padding-left: 26px;
+        @media screen and (max-width: $breakpointL) {
+          font-size: 24px;
+          line-height: 35px;
+        }
+      }
+    }
+
+    .reviewClient {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      .reviewClientImg {
+        img {
+          width: 100%;
+        }
+      }
+
+      .reviewClientRate {
+        display: flex;
+        gap: 4px;
+        align-items: center;
+        @media screen and (max-width: $breakpointL) {
+          flex-wrap: wrap;
+          justify-content: center;
+        }
+
+        .reviewRateText {
+          font-weight: 700;
+          font-size: 36px;
+          line-height: 62px;
+          color: black;
+          @media screen and (max-width: $breakpointL) {
+            font-size: 24px;
+          }
+        }
+        .reviewRateStars {
+          color: #0daa41;
+          font-size: 40px;
+          @media screen and (max-width: $breakpointL) {
+            font-size: 28px;
+          }
+        }
+      }
+
+      .reviewClientRead {
+        @media screen and (max-width: $breakpointL) {
+          text-align: center;
+        }
+        a {
+          font-size: 18px;
+          line-height: 24px;
+          color: #424b5a;
+        }
+      }
+    }
+  }
+
+  .join {
+    .didntFind {
+      .didntFindText {
+        margin-top: 170px;
+        text-align: center;
+
+        .writeTo {
+          margin-bottom: 100px;
+        }
+
+        .title {
+          font-weight: 700;
+          color: $darkBlue;
+          line-height: 62px;
+          font-size: $titleText;
+          padding-bottom: 16px;
+        }
+        .subText {
+          color: $grey;
+          font-size: $normalText;
+          padding-bottom: 40px;
+        }
+      }
+    }
+
+    .seeMore {
+      display: flex;
+      justify-content: center;
+      .seeMoreBtn {
+        padding: 14px 24px;
+        display: inline-block;
+      }
+    }
+    .joinBlocks {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      padding-bottom: 68px;
+      .joinBlock {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 30px 60px;
+        background: #ffffff;
+        box-shadow: 0px 0px 8px rgba(22, 23, 72, 0.07),
+          0px 17px 35px rgba(22, 23, 72, 0.05);
+        border-radius: 8px;
+        @media screen and (max-width: 680px) {
+          padding: 30px 10px;
+          gap: 10px;
+        }
+
+        .joinButton {
+          padding: 14px 24px;
+        }
+
+        .joinBlockText {
+          display: flex;
+          flex-direction: column;
+
+          .joinBlockTitle {
+            font-size: 28px;
+            color: #484c63;
+          }
+
+          .info {
+            display: flex;
+            padding-top: 24px;
+            gap: 14px;
+
+            .time {
+              img {
+                margin-right: 4px;
+              }
+            }
+            .geo,
+            .time {
+              display: flex;
+              align-items: center;
+              color: #8f90a6;
+            }
+          }
+        }
+      }
+    }
+    .joinText {
+      text-align: center;
+      margin-bottom: 50px;
+      .joinTitle {
+        color: $darkBlue;
+        font-weight: 700;
+        font-size: 44px;
+        line-height: 62px;
+        padding-bottom: 20px;
+      }
+
+      .joinSubText {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 27px;
+        color: $grey;
+      }
+    }
+  }
+}

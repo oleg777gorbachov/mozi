@@ -1,0 +1,48 @@
+@import "var.scss";
+
+.build {
+  background: linear-gradient(
+    342.12deg,
+    #e3e7f6 -6.53%,
+    rgba(227, 231, 246, 0) 87.81%
+  );
+  padding-top: 130px;
+
+  .buildInfo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+
+    .buildTitle {
+      color: $darkBlue;
+      font-weight: 800;
+      font-size: $titleText;
+      line-height: 62px;
+      padding-bottom: 32px;
+      max-width: 60%;
+      margin: 0 auto;
+    }
+
+    .buildSubTitle {
+      color: $grey;
+      font-size: $subText;
+      line-height: 33px;
+      max-width: 70%;
+      margin: 0 auto;
+      padding-bottom: 40px;
+    }
+
+    .buttons {
+      display: flex;
+      gap: 16px;
+      margin: 0 auto;
+      padding-bottom: 150px;
+
+      .button,
+      .button2 {
+        padding: 14px 24px;
+      }
+    }
+  }
+}

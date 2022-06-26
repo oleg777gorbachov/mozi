@@ -1,0 +1,90 @@
+.offer {
+  background: white;
+}
+
+@media screen and (max-width: 1320px) {
+  .offer .offerScreen {
+    margin: 32px 50px 0px 50px;
+  }
+}
+
+@media screen and (max-width: 868px) {
+  .offer .offerScreen {
+    margin: 32px 10px 0px 10px;
+  }
+}
+
+.offer .offerBlocks {
+  gap: 36px;
+  padding-bottom: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+@media screen and (max-width: 968px) {
+  .offer .offerBlocks {
+    gap: 16px;
+  }
+}
+
+.offer .offerBlocks .offerBlock {
+  background-color: white;
+  -webkit-box-shadow: 0px 0px 8px rgba(22, 23, 72, 0.07), 0px 25px 35px rgba(22, 23, 72, 0.05);
+          box-shadow: 0px 0px 8px rgba(22, 23, 72, 0.07), 0px 25px 35px rgba(22, 23, 72, 0.05);
+  border-radius: 8px;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 27%;
+          flex: 1 1 27%;
+}
+
+.offer .offerBlocks .offerBlock .offerBlockText {
+  padding: 40px;
+}
+
+.offer .offerBlocks .offerBlock .offerBlockText .offerBlockTitleBlock {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-bottom: 32px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.offer .offerBlocks .offerBlock .offerBlockText .offerBlockTitleBlock .offerBlockTitle {
+  font-size: 28px;
+  line-height: 31px;
+  color: black;
+  padding-left: 10px;
+}
+
+.offer .offerBlocks .offerBlock .offerBlockText .offerBlockSubText {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 27px;
+  color: #646a89;
+}
+
+.offer .offerText {
+  padding-top: 100px;
+  text-align: center;
+}
+
+.offer .offerText .offerTitle {
+  color: #1a2578;
+  font-weight: 700;
+  font-size: 44px;
+  line-height: 62px;
+}
+
+.offer .offerText .offerSubText {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 27px;
+  color: #646a89;
+  padding-top: 16px;
+  padding-bottom: 90px;
+}

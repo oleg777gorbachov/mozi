@@ -1,0 +1,105 @@
+.reputation {
+  padding: 100px 0px;
+  background-color: white;
+  text-align: center;
+}
+
+.reputation .repBlocks {
+  padding-top: 150px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 32px;
+}
+
+@media screen and (max-width: 868px) {
+  .reputation .repBlocks {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+
+.reputation .repBlocks .repBlock {
+  background-color: white;
+  -webkit-box-shadow: 0px 0px 8px rgba(22, 23, 72, 0.07), 0px 25px 35px rgba(22, 23, 72, 0.05);
+          box-shadow: 0px 0px 8px rgba(22, 23, 72, 0.07), 0px 25px 35px rgba(22, 23, 72, 0.05);
+  border-radius: 8px;
+}
+
+.reputation .repBlocks .repBlock .pad22 {
+  padding-bottom: 22px !important;
+}
+
+.reputation .repBlocks .repBlock .pad26 {
+  padding-bottom: 26px !important;
+}
+
+.reputation .repBlocks .repBlock .repBlockTitle {
+  font-weight: 700;
+  font-size: 56px;
+  color: #1a2578;
+  padding-top: 50px;
+  padding-bottom: 20px;
+}
+
+.reputation .repBlocks .repBlock .repBlockSubText {
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 33px;
+  color: #646a89;
+  padding-bottom: 16px;
+}
+
+.reputation .repBlocks .repBlock .repBlockImg {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+}
+
+.reputation .repBlocks .repBlock .repBlockImg img {
+  width: 100%;
+}
+
+@media screen and (max-width: 1320px) {
+  .reputation .repScreen {
+    margin: 32px 50px 0px 50px;
+  }
+}
+
+@media screen and (max-width: 868px) {
+  .reputation .repScreen {
+    margin: 32px 10px 0px 10px;
+  }
+}
+
+.reputation .repImages {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.reputation .repImages img {
+  padding: 5px 20px;
+}
+
+.reputation .repText {
+  font-size: 36px;
+  font-weight: 600;
+  margin-bottom: 80px;
+  color: #1a2578;
+}
+
+.reputation .repText em {
+  color: #bf0830;
+}

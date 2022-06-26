@@ -1,0 +1,161 @@
+@import "var.scss";
+
+.selected {
+  a {
+    color: $buttonColor !important;
+  }
+}
+
+.menuBurger {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-color: $grey;
+  z-index: 2;
+  opacity: 0;
+  transition: all 0.3s;
+  visibility: hidden;
+  position: fixed;
+
+  ul {
+    text-align: center;
+    margin-top: 200px;
+    .navButton {
+      width: 75%;
+      margin: auto;
+    }
+    li {
+      padding: 15px 0px;
+
+      a {
+        text-decoration: none;
+        font-size: 32px;
+        color: white;
+      }
+    }
+  }
+}
+
+header {
+  padding-top: 32px;
+  background: linear-gradient(
+    252.91deg,
+    #e3e7f6 3.68%,
+    rgba(227, 231, 246, 0) 97.82%
+  );
+
+  @media screen and (max-width: $breakpointXXL) {
+    padding: 32px 50px 0px 50px;
+  }
+  @media screen and (max-width: $breakpointL) {
+    padding: 0px 10px;
+    padding-top: 32px;
+  }
+
+  .headerContainer {
+    display: flex;
+    height: 48px;
+  }
+  .menuSmall {
+    display: none;
+    @media screen and (max-width: $breakpointL) {
+      display: block;
+    }
+
+    .menuLogo {
+      margin-right: 20px;
+      transition: all 0.3s;
+      z-index: 3;
+      position: relative;
+      cursor: pointer;
+
+      // &:focus {
+      //   .menuLine1 {
+      //     transform: translate(0px, 13px) rotate(45deg);
+      //   }
+      //   .menuLine2 {
+      //     transform: rotate(-45deg);
+      //   }
+      //   .menuLine3 {
+      //     opacity: 0;
+      //   }
+      // }
+
+      div {
+        margin: 8px 0px;
+        width: 40px;
+        height: 5px;
+        border-radius: 2px;
+        background: $darkBlue;
+        transition: all 0.3s;
+      }
+    }
+  }
+
+  .logo {
+    display: flex;
+    flex-grow: 4;
+    align-items: center;
+  }
+  nav {
+    display: flex;
+    justify-content: end;
+
+    @media screen and (max-width: $breakpointL) {
+      display: none;
+    }
+
+    ul {
+      display: flex;
+      .navButton {
+        transition: all 0.3s;
+        padding: 14px 32px;
+        a {
+          color: white;
+          text-decoration: none;
+          font-size: $normalText;
+          z-index: 2;
+          position: relative;
+          transition: all 0.3s;
+        }
+      }
+
+      li {
+        padding: 0px 30px;
+        margin: auto;
+        position: relative;
+      }
+
+      .link {
+        a {
+          text-decoration: none;
+          font-size: $normalText;
+          color: $grey;
+          border-bottom: 2px solid transparent;
+          transition: all 0.3s;
+
+          &:after {
+            content: "";
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            right: 0;
+            width: 100%;
+            height: 3px;
+            transform: scaleX(0);
+            background-color: $buttonColor;
+            transition: transform 0.3s;
+          }
+
+          &:hover {
+            color: black;
+
+            &:after {
+              transform: scaleX(0.75);
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,128 @@
+@import "var.scss";
+
+.contact {
+  .contactScreen {
+    display: flex;
+    padding-top: 100px;
+    padding-bottom: 80px;
+    gap: 32px;
+    @media screen and (max-width: $breakpointXXL) {
+      margin: 32px 50px 0px 50px;
+    }
+
+    @media screen and (max-width: $breakpointL) {
+      margin: 32px 10px 0px 10px;
+    }
+    @media screen and (max-width: $breakpointSL) {
+      flex-direction: column;
+    }
+  }
+
+  .contactInfo {
+    margin-top: 140px;
+    padding-left: 80px;
+    flex-basis: 300px;
+    @media screen and (max-width: $breakpointL) {
+      padding-left: 0px;
+    }
+    @media screen and (max-width: $breakpointSL) {
+      margin-top: 10px;
+    }
+    .contactBlock {
+      margin-bottom: 70px;
+      .contactGeo {
+        display: flex;
+        padding-bottom: 25px;
+        font-weight: 700;
+        font-size: $normalText;
+        align-items: center;
+
+        .geo {
+          margin-left: 20px;
+        }
+      }
+      .street {
+        max-width: 45%;
+        line-height: 150%;
+        @media screen and (max-width: $breakpointXL) {
+          max-width: 85%;
+        }
+      }
+    }
+  }
+
+  .contactForm {
+    flex-basis: 600px;
+
+    .contactFormBlock {
+      display: flex;
+      flex-direction: column;
+      padding: 48px 54px;
+      background: #ffffff;
+      box-shadow: 0px 0px 8px rgba(22, 23, 72, 0.07),
+        0px 25px 35px rgba(22, 23, 72, 0.05);
+      border-radius: 8px;
+      @media screen and (max-width: $breakpointSL) {
+        padding: 8px 12px;
+      }
+
+      .contactBtn {
+        padding: 14px 24px;
+        max-width: 50px;
+        text-align: center;
+        transition: all 0.3s;
+        cursor: pointer;
+
+        &:hover {
+          button {
+            color: black;
+          }
+        }
+
+        a {
+          font-size: $normalText;
+        }
+
+        button {
+          transition: all 0.3s;
+          cursor: pointer;
+          font-size: $normalText;
+          border: 0px;
+          background-color: transparent;
+          color: white;
+        }
+      }
+
+      label {
+        display: flex;
+        flex-direction: column;
+        color: $grey;
+        margin-bottom: 30px;
+
+        textarea {
+          resize: none;
+          max-width: 600px;
+          max-height: 180px;
+          margin: 6px 0px;
+          font-size: $normalText;
+        }
+
+        input {
+          margin: 6px 0px;
+          height: 60px;
+          font-size: $normalText;
+          border-radius: 6px;
+          border: 2px solid rgba($color: $grey, $alpha: 0.5);
+        }
+      }
+      .name {
+      }
+      .email {
+      }
+      .subject {
+      }
+      .message {
+      }
+    }
+  }
+}

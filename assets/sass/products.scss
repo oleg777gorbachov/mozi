@@ -1,0 +1,181 @@
+@import "var.scss";
+
+.products {
+  border-top: 1px solid $greyLight;
+  background-color: white;
+
+  .productsScreen {
+    padding-bottom: 108px;
+
+    @media screen and (max-width: $breakpointXXL) {
+      margin: 32px 50px 0px 50px;
+    }
+
+    @media screen and (max-width: $breakpointL) {
+      margin: 32px 10px 0px 10px;
+    }
+  }
+
+  .productText {
+    margin-top: 108px;
+    text-align: center;
+
+    .productTitle {
+      font-size: $titleText;
+      font-weight: 600;
+      color: $darkBlue;
+    }
+
+    .productSub {
+      margin-top: 16px;
+      margin-bottom: 140px;
+      font-size: $subText;
+      color: $grey;
+    }
+  }
+
+  .productsBlock {
+    display: flex;
+    justify-content: center;
+    @media screen and (max-width: 768px) {
+      flex-direction: column;
+    }
+
+    .companyImage {
+      display: flex;
+      justify-content: center;
+      height: 100%;
+
+      img {
+        width: 100%;
+      }
+    }
+
+    .productBlock {
+      box-shadow: 0px 0px 8px rgba(22, 23, 72, 0.07),
+        0px 25px 35px rgba(22, 23, 72, 0.08);
+      border-radius: 8px;
+      display: flex;
+      flex-direction: column;
+      margin: 0 16px;
+      @media screen and (max-width: 768px) {
+        margin: 15px 20px;
+      }
+
+      .productInfo {
+        margin-top: 64px;
+        margin-left: 62px;
+        @media screen and (max-width: $breakpointSL) {
+          margin-top: 32px;
+          margin-left: 16px;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+        }
+        .companyName {
+          margin-bottom: 40px;
+
+          img {
+          }
+        }
+
+        .companyDesc {
+          font-size: 24px;
+          max-width: 65%;
+          line-height: 31px;
+          color: $black;
+          @media screen and (max-width: $breakpointSL) {
+            text-align: center;
+          }
+        }
+
+        .companyBtn {
+          padding: 12px 24px;
+          margin-top: 32px;
+          display: inline-flex;
+        }
+      }
+    }
+  }
+}
+
+.productsBlockPageProduct {
+  padding-top: 105px;
+
+  .reverse {
+    flex-direction: row-reverse;
+    text-align: end;
+  }
+
+  .productBlock {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+    @media screen and (max-width: 768px) {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .companyImage2 {
+      width: 100%;
+      text-align: start;
+      @media screen and (max-width: 768px) {
+        text-align: center;
+      }
+      img {
+        @media screen and (max-width: $breakpointXL) {
+          width: 100%;
+        }
+        @media screen and (max-width: 768px) {
+          width: 75%;
+        }
+      }
+    }
+
+    .companyImage {
+      width: 100%;
+      text-align: end;
+      @media screen and (max-width: 768px) {
+        text-align: center;
+      }
+      img {
+        @media screen and (max-width: $breakpointXL) {
+          width: 100%;
+        }
+        @media screen and (max-width: 768px) {
+          width: 75%;
+        }
+      }
+    }
+    .productInfo {
+      flex-basis: 560px;
+      padding-right: 30px;
+      @media screen and (max-width: $breakpointL) {
+        text-align: center;
+        padding-top: 20px;
+        border-top: 1px solid $greyLight;
+        padding-right: 0px;
+      }
+
+      .companyName {
+        margin-bottom: 40px;
+      }
+
+      .companyDesc {
+        margin-bottom: 14px;
+        color: $grey;
+        font-size: $normalText;
+        line-height: 27px;
+        p {
+          margin: 20px 0px;
+        }
+      }
+
+      .companyBtn {
+        padding: 12px 24px;
+        display: inline-block;
+        margin-bottom: 20px;
+      }
+    }
+  }
+}
