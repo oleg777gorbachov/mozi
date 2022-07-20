@@ -21,6 +21,13 @@
       url("http://db.onlinewebfonts.com/t/23c0fcab84d99da0de762de7e220a6e1.svg#Europa")
       format("svg"); /* iOS 4.1- */
 }
+@font-face {
+  font-family: AzoSans;
+  font-display: swap;
+  src: url("../fonts/AzoSans.woff") format("woff"), url("../fonts/AzoSans.woff2") format("woff2");
+  font-weight: 400;
+  font-style: AzoSans;
+}
 html,
 body,
 div,
