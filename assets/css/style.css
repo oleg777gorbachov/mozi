@@ -24,7 +24,7 @@
 @font-face {
   font-family: AzoSans;
   font-display: swap;
-  src: url("../fonts/AzoSans.woff") format("woff"), url("../fonts/AzoSans.woff2") format("woff2");
+  src: url("../font/AzoSans.woff") format("ttf"), url("../font/AzoSans.woff2") format("ttf");
   font-weight: 400;
   font-style: AzoSans;
 }
