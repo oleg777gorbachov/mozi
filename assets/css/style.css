@@ -22,11 +22,11 @@
       format("svg"); /* iOS 4.1- 
 }*/
 @font-face {
-  font-family: AzoSans;
+  font-family: Europa;
   font-display: swap;
-  src: url("../font/AzoSans.woff") format("ttf"), url("../font/AzoSans.woff2") format("ttf");
+  src: url("../font/Europa.ttf") format("ttf"), url("../font/Europa.ttf") format("ttf");
   font-weight: 400;
-  font-style: AzoSans;
+  font-style: Europa;
 }
 html,
 body,
